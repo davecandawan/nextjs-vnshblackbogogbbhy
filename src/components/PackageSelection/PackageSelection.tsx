@@ -27,15 +27,15 @@ const PackageSelection: React.FC = () => {
           </div>
           <div className="pt-0 px-4 pb-4 flex-grow flex flex-col bg-white">
             <div className="flex justify-center items-center gap-2">
-              <span className="text-[40px] font-bold text-black">$79.00</span>
+              <span className="text-[40px] font-bold text-black">$79.97</span>
               <span className="text-[#ff0000] text-lg font-bold">+ S&H</span>
             </div>
             <div className="text-black font-bold text-xl mb-2 text-center pt-2">
-              You Saved $79.00
+              You Saved $79.97
             </div>
             <div className="mt-auto">
               <a
-                href={getCheckoutUrl('https://secure.vnsh.com/vnshgraybogogbbhy/starter-checkout')}
+                href={getCheckoutUrl('https://secure.vnsh.com/vnshblackbogogbbhy/starter-checkout')}
                 target="_self"
                 rel="noopener noreferrer"
                 className="block w-full"
@@ -112,16 +112,18 @@ const PackageSelection: React.FC = () => {
 
           <div className="p-4 flex-grow flex flex-col bg-[#fff]">
             <div className="flex justify-center items-center gap-2">
-              <span className="text-[40px] font-bold text-black">$199.00</span>
+              <span className="text-[40px] font-bold text-black">$199.97</span>
               <span className="text-[#ff0000] text-lg font-bold">+ Free S&H</span>
             </div>
             <div className="text-black font-bold text-xl mb-2 text-center pt-2">
-              You Saved $188.91
+              You Saved $189.88
             </div>
 
             <div className="mt-auto">
               <a
-                href={getCheckoutUrl('https://secure.vnsh.com/vnshgraybogogbbhy/advanced-checkout')}
+                href={getCheckoutUrl(
+                  'https://secure.vnsh.com/vnshblackbogogbbhy/advanced-checkout'
+                )}
                 target="_self"
                 rel="noopener noreferrer"
                 className="block w-full"
@@ -177,15 +179,17 @@ const PackageSelection: React.FC = () => {
           </div>
           <div className="pt-0 px-4 pb-4 flex-grow flex flex-col bg-white">
             <div className="flex justify-center items-center gap-2">
-              <span className="text-[40px] font-bold text-black">$149.00</span>
+              <span className="text-[40px] font-bold text-black">$149.97</span>
               <span className="text-[#ff0000] text-lg font-bold">+ Free S&H</span>
             </div>
             <div className="text-black font-bold text-xl mb-2 text-center pt-2">
-              You Saved $168.94
+              You Saved $169.91
             </div>
             <div className="mt-auto">
               <a
-                href={getCheckoutUrl('https://secure.vnsh.com/vnshgraybogogbbhy/enhanced-checkout')}
+                href={getCheckoutUrl(
+                  'https://secure.vnsh.com/vnshblackbogogbbhy/enhanced-checkout'
+                )}
                 target="_self"
                 rel="noopener noreferrer"
                 className="block w-full"

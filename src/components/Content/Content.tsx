@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import PackageSelection from '../PackageSelection/PackageSelection';
@@ -16,6 +16,11 @@ const YotpoReview = dynamic(() => import('../Yotpo/YotpoReview').then(mod => mod
 });
 
 const Content: React.FC = () => {
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const newUrl = 'https://vnsh.com/pages/vnshblackbogogbb?' + params.toString();
+    window.location.href = newUrl;
+  }, []);
   return (
     <div className="min-h-screen bg-[url('/bg.webp')] bg-cover bg-fixed bg-repeat bg-center">
       <div className="w-full bg-[url('/bg.webp')] bg-cover bg-fixed bg-repeat bg-center">
@@ -116,8 +121,8 @@ const Content: React.FC = () => {
           </div>
           <div className="w-full md:w-[82%] mx-auto max-w-[1120px] py-5 px-0">
             <Image
-              src="/contentimages/VNSH-GrayHolster-BlockImages-V2-Desktop.webp"
-              alt="Laser Strike System"
+              src="/contentimages/VNSH-BlackHolster-BlockImages-V2-Desktop.webp"
+              alt="Black Holster"
               className="w-full h-auto"
               width={1120}
               height={600}
@@ -241,8 +246,8 @@ const Content: React.FC = () => {
           </div>
           <div className="w-full md:w-[80%] mx-auto max-w-[1120px] px-0 md:px-0">
             <Image
-              src="/contentimages/GrayImage2-Desktop.webp"
-              alt="Gray Holster"
+              src="/contentimages/BlackImage2-Desktop.webp"
+              alt="Black Holster"
               className="w-full h-auto"
               width={1120}
               height={600}
@@ -320,16 +325,6 @@ const Content: React.FC = () => {
               <p id="package-selection" className="text-lg md:text-xl font-medium mb-8">
                 Then you owe it to yourself to grab this deal now!
               </p>
-            </div>
-            <div className="w-full md:w-[80%] mx-auto max-w-[1120px] px-0 md:px-0 md:py-5">
-              <Image
-                src="/contentimages/GrayImage1-Desktop.webp"
-                alt="VNSH Gray Holster"
-                className="w-full h-auto"
-                width={1120}
-                height={600}
-                priority
-              />
             </div>
             {/* Reviews Component */}
             <div className="mb-12">

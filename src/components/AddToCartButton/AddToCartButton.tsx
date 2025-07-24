@@ -20,8 +20,8 @@ const AddToCartButton = () => {
           BOGO
         </span>
         <div className="mt-1 sm:mt-2">
-          <span className="pr-3 font-medium text-[22px] sm:text-3xl">$79.00</span>
-          <span className="text-[#ff0000] line-through text-[22px] sm:text-3xl">$159.00</span>
+          <span className="pr-3 font-medium text-[22px] sm:text-3xl">$79.97</span>
+          <span className="text-[#ff0000] line-through text-[22px] sm:text-3xl">$159.97</span>
         </div>
       </div>
     </div>
